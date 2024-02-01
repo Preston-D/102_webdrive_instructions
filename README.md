@@ -46,8 +46,8 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 Follow these instructions if you are on campus and in a Windows lab. You will need a method to transfer your lab files onto the lab computer (flash drive, email, SCP, etc.). Once you have a method of transferring your lab files follow these steps.
 
-[!TIP]
-If a computer turns on and is using the Linux operating system, and you would like to switch. Shut down the computer and turn it back on. Then select the "Windows" option with the arrow keys when the computer boots up.
+> [!TIP]
+> If a computer turns on and is using the Linux operating system, and you would like to switch. Shut down the computer and turn it back on. Then select the "Windows" option with the arrow keys when the computer boots up.
 
 \*You will not be able to switch to windows if you are in a linux only lab. In this case, follow the steps in option 1.
 
