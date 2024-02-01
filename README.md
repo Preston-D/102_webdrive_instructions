@@ -17,7 +17,7 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 3. Open a new file explorer window (Files > New Window) and navigate to the "Other Locations" tab.
 
-![alt](/img/O1-1.png "title")
+![alt](./img/O1-1.png "title")
 
 4. Select "Debian GNU/Linux". You will see a list of many folders (academic, bin, boot, etc.). Ignore these and scroll down until you see the "web" folder.
 
@@ -32,7 +32,7 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 8. Notice the file path at the top of the file explorer, this will be similar to your URL that you will submit.
 
-![alt](/img/O1-2.png "title")
+![alt](./img/O1-2.png "title")
 
 9. Navigate to a browser and type the following URL:
    `https://studentweb.cs.wwu.edu/~/username/super_secret/lab3/index.html`
@@ -58,6 +58,37 @@ Follow these instructions if you are on campus and in a Windows lab. You will ne
 
 1. Log into the lab computer. This will be your WWU CS login (this is different from your standard WWU login). If you forgot your login, you can reset your password via <https://password.cs.wwu.edu/>
 
+2. Open  File Explorer and navigate to where you stored your lab files. They may be on a flash drive or where ever you put them.
+
+3. Open a new File Explorer window (Right click File Explorer in the dock and click "File Explorer"). Click "This PC".
+
+![alt](./img/O2-1.png "title")
+
+4. Click "Web (\\fs1) (W:)" to view the web drive.
+
+5. Click Students.
+
+6. Find your WWU username. You may want to utilize the search feature. Enter into your student directory.
+
+7. In your other File Explorer window, simply drag your secret folder into your student directory. Click on your secret folder and you should see your lab folder.
+
+![alt](./img/O2-2.png "title")
+
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
+
+8. Navigate to a browser and type the following URL:
+   `https://studentweb.cs.wwu.edu/~/username/super_secret/lab3/index.html`
+
+   - Replace `username` with your WWU username.
+   - Replace `super_secret` with your secret folder name.
+   - Replace `lab3` with the name of the folder containing your lab files.
+   - Replace `index.html` with the name of your index file if needed.
+
+9. Confirm that your website is appearing in a browser. Once confirmed, **this will be the URL that you submit**.
+
+10. Congrats! You've uploaded to the web drive.
+
 ## Option 3: Remotely via SSH and FileZilla
 
 Follow the steps in this section if you are trying to upload files from your personal computer while **not** connected to the university wifi.
@@ -77,7 +108,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 3. Open FileZilla and locate the quick connect options at the top of the application.
 
-![alt](/img/O3-1.png "title")
+![alt](./img/O3-1.png "title")
 
 4. Fill out the fields for quick connect:
 
@@ -93,11 +124,11 @@ Follow the steps in this section if you are trying to upload files from your per
 
 6. An "Unknown host key" dialog box will appear asking, simply click "OK". You may optionally select to always trust the host.
 
-![alt](/img/O3-2.png "title")
+![alt](./img/O3-2.png "title")
 
 7. After a moment you should see files on the right side (Remote Site) of FileZilla.
 
-![alt](/img/O3-3.png "title")
+![alt](./img/O3-3.png "title")
 
 9. In the "Remote site:" dialog box type:
    `/web/students/username/super_secret`
@@ -149,7 +180,7 @@ Follow the steps in this section if you are trying to upload files from your per
    - Replace `username` with your WWU **CS** username.
 
 4. You will be promted for for password. Remember this is your WWU **CS** password.
-   ![alt](/img/O4-1.png "title")
+   ![alt](./img/O4-1.png "title")
 
 5. You may be asked to confirm that you wish to continue connecting. Enter `yes`.
 
@@ -164,7 +195,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
    - Replace `username` with your WWU **CS** username.
 
-   ![alt](/img/O4-2.png "title")
+   ![alt](./img/O4-2.png "title")
 
 > [!NOTE]
 > The words "directory" and "folder" are interchangeable.
@@ -179,7 +210,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
    - Replace `super_secret` with your secret folder name.
 
-   ![alt](/img/O4-3.png "title")
+   ![alt](./img/O4-3.png "title")
 
 10. You will want to create a directory in your secret folder for your lab.
     `mkdir lab3`
@@ -191,7 +222,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 - Replace `lab3` with your lab folder name.
 
-![alt](/img/O4-4.png "title")
+![alt](./img/O4-4.png "title")
 
 12. Create a directory for each directory inside your lab3 folder, for instance, you may have a folder for CSS and Images. Type:
     `mkdir css`
@@ -206,7 +237,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 13. You have now created all the locations we need in order to upload our files with SCP. Type: `exit` to terminate the SSH connection with the lab computer.
 
-![alt](/img/O4-5.png "title")
+![alt](./img/O4-5.png "title")
 
 ### Option 4 - Section 2: Uploading via SCP
 
@@ -215,7 +246,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 4. Locate your lab folder that contains files on your personal computer. A good way to find this is with the `ls` command. Construct the path from the root, for example: `~/Documents/super_secret/lab3`. When you enter the `ls` command, you should see your HTML files and CSS folder. From now on we will refer to this as your `LOCAL_PATH`.
 
-![alt](/img/O4-1.png "title")
+![alt](./img/O4-1.png "title")
 
 5. Lets create your remote path, which we will refer to as `REMOTE_PATH`. The remote path will be: `~/web/students/username/secret_folder/lab3`
 
@@ -232,7 +263,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 7. You may be asked to confirm that you wish to continue connecting. Enter `yes`.
 
-![alt](/img/O4-2.png "title")
+![alt](./img/O4-2.png "title")
 
 8. You will be promted for your username and password. Remember this is your WWU **CS** username and password. Enter
 
