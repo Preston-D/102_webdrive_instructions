@@ -49,7 +49,8 @@ Follow these instructions if you are on campus and in a Windows lab. You will ne
 > [!TIP]
 > If a computer turns on and is using the Linux operating system, and you would like to switch. Shut down the computer and turn it back on. Then select the "Windows" option with the arrow keys when the computer boots up.
 
-\*You will not be able to switch to windows if you are in a linux only lab. In this case, follow the steps in option 1.
+> [!WARNING]
+> You will not be able to switch to windows if you are in a linux only lab. In this case, follow the steps in option 1.
 
 1. Log into the lab computer. This will be your WWU CS login (this is different from your standard WWU login). If you forgot your login, you can reset your password via <https://password.cs.wwu.edu/>
 
