@@ -2,7 +2,8 @@
 
 This document will walk you through setup of the **studentweb** folder and subfolders, and the uploading of documents to the WWU computer science department web hosting using.
 
-To see an up to date list of CS Lab rooms visit: <https://support.cs.wwu.edu/home/survival_guide/resources/Labs.html>
+> [!NOTE]
+> To see an up to date list of CS Lab rooms visit: <https://support.cs.wwu.edu/home/survival_guide/resources/Labs.html>
 
 ---
 
@@ -16,7 +17,7 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 3. Open a new file explorer window (Files > New Window) and navigate to the "Other Locations" tab.
 
-![The San Juan Mountains are beautiful!](/img/O1-1.png "San Juan Mountains")
+![alt](/img/O1-1.png "title")
 
 4. Select "Debian GNU/Linux". You will see a list of many folders (academic, bin, boot, etc.). Ignore these and scroll down until you see the "web" folder.
 
@@ -24,7 +25,10 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 6. Search for your WWU username, you may want to utilize the search feature. Enter into this subfolder.
 
-7. This is where you will upload your lab files, this should include your "secret folder". **Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'**.
+7. This is where you will upload your lab files, this should include your "secret folder".
+
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
 8. Notice the file path at the top of the file explorer, this will be similar to your URL that you will submit.
 
@@ -58,6 +62,9 @@ Follow these instructions if you are on campus and in a Windows lab. You will ne
 
 Follow the steps in this section if you are trying to upload files from your personal computer while **not** connected to the university wifi.
 
+> [!IMPORTANT]
+> If you are connected to the university wifi, you may skip step 1.
+
 1. Connect to the internet through the university VPN.
 
    1. In a browser open the CS support documentation. <https://support.cs.wwu.edu/home/access/wwu_vpn/index.html>.
@@ -79,9 +86,12 @@ Follow the steps in this section if you are trying to upload files from your per
    - Password: `Your WWU CS Password`
    - Port: `992`
 
-5. Press "Quickconnect". If the operation does nothing, ensure you have the correct username and password, and double check the port and host.
+5. Press "Quickconnect".
 
-6. An "Unknown host key" dialog box will appear asking, simply click "OK".
+> [!TIP]
+> If pressing "Quickconnect" does nothing, ensure you have the correct username and password, and double check the port and host. Remember, this is your WWU **CS** login.
+
+6. An "Unknown host key" dialog box will appear asking, simply click "OK". You may optionally select to always trust the host.
 
 ![alt](/img/O3-2.png "title")
 
@@ -95,13 +105,14 @@ Follow the steps in this section if you are trying to upload files from your per
    - Replace `username` with your WWU username.
    - Replace `super_secret` with your secret folder name.
 
-10. This is where you will upload your lab files, this should include your "secret folder". **Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'**.
+10. On the left side of FileZilla (Local Site) navigate to your lab via the "Local Site" dialog box, or the user interface. This will be individual for each person, make sure you know exactly where you are storing your files.
 
-11. On the left side of FileZilla (Local Site) navigate to your lab via the "Local Site" dialog box, or the user interface. This will be individual for each person, make sure you know exactly where you are storing your files.
+11. Simply drag the lab folder from the Local site to the Remote site (left to right). This will upload the files and in a moment you should see the lab folder appear on the Remote site.
 
-12. Simply drag the lab folder from the Local site to the Remote site (left to right). This will upload the files and in a moment you should see the lab folder appear on the Remote site.
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
-13. Navigate to a browser and type the following URL:
+12. Navigate to a browser and type the following URL:
     `https://studentweb.cs.wwu.edu/~/username/super_secret/lab3/index.html`
 
     - Replace `username` with your WWU username.
@@ -109,9 +120,50 @@ Follow the steps in this section if you are trying to upload files from your per
     - Replace `lab3` with the name of the folder containing your lab files.
     - Replace `index.html` with the name of your index file if needed.
 
-14. Confirm that your website is appearing in a browser. Once confirmed, **this will be the url that you submit**.
+13. Confirm that your website is appearing in a browser. Once confirmed, **this will be the url that you submit**.
 
-15. Congrats! you've uploaded to the web drive.
+14. Congrats! you've uploaded to the web drive.
+
+<!-- ## Option 4: Remotely via Terminal and SCP
+
+Follow the steps in this section if you are trying to upload files from your personal computer while **not** connected to the university wifi.
+
+> [!IMPORTANT]
+> If you are connected to the university wifi, you may skip step 1.
+
+> [!WARNING]
+> The syntax for commands between Windows and MacOS will vary. Currently the tutorial is only written for MacOS.
+
+1. Connect to the internet through the university VPN.
+
+   1. In a browser open the CS support documentation. <https://support.cs.wwu.edu/home/access/wwu_vpn/index.html>.
+   2. Select the operating system (Windows, MacOS, or Linux) and follow the CS support tutorial.
+
+2. Open a new terminal window.
+
+3. Locate your lab folder that contains files on your personal computer. A good way to find this is with the `ls` command. Construct the path from the root, for example: `~/Documents/super_secret/lab3`. When you enter the `ls` command, you should see your HTML files and CSS folder. From now on we will refer to this as your `LOCAL_PATH`.
+
+![alt](/img/O4-1.png "title")
+
+5. Lets create your remote path, which we will refer to as `REMOTE_PATH`. The remote path will be: `~/web/students/username/secret_folder/lab3`
+
+   - Replace `username` with your WWU username.
+   - Replace `secret_folder` with your secret folder name.
+   - Replace `lab3` with the name of your lab folder.
+
+6. Lets transfer your first file, `index.html`. Run the command:
+`scp -P 922 LOCAL_PATH/index.html username@linux.cs.wwu.edu:REMOTE_PATH/index.html`
+
+   - Replace `LOCAL_PATH` with your local path.
+   - Replace `username` with your WWU username.
+   - Replace `REMOTE_PATH` with your remote path.
+
+7. You will be asked to confirm that you wish to continue connecting. Enter `yes`.
+
+![alt](/img/O4-2.png "title")
+
+
+8. You will be promted for your username and password. Remember this is your WWU **CS** username and password. Enter  -->
 
 <!-- https://support.cs.wwu.edu/home/survival_guide/resources/Department_Web_Hosting.html
 
