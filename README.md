@@ -4,14 +4,14 @@ This document will walk you through setup of the **studentweb** folder and subfo
 
 This document outlines 4 methods of uploading files to the web drive, although there are undoubtedly more. The options are:
 
-1.  Log into a Linux machine on campus
-2.  Log into a Windows machine on campus
-3.  Remotely via SSH and FileZilla
-4.  Remotely via Terminal and SCP
+1.  [Log into a Linux machine on campus](#option-1-log-into-a-linux-machine-on-campus)
+2.  [Log into a Windows machine on campus](#option-2-log-into-a-windows-machine-on-campus)
+3.  [Remotely via SSH and FileZilla](#option-3-remotely-via-ssh-and-filezilla)
+4.  [Remotely via Terminal and SCP](#option-4-remotely-via-terminal-and-scp)
 
 Options 1 and 2 require you to be on campus in a computer lab. Options 3 and 4 may be done anywhere.
 
-Additionally, there is a section detailing how to SSH into the lab machines.
+Additionally, there is a section detailing [how to SSH into the lab machines](#extra-content-connecting-via-ssh).
 
 > [!NOTE]
 > To see an up to date list of CS Lab rooms visit: <https://support.cs.wwu.edu/home/survival_guide/resources/Labs.html>
@@ -356,6 +356,8 @@ At some point you may with so run commands remotely on the lab computers. If tha
 
    ![exiting the terminal](./img/O4-5.png)
 
+
+[Jump to Top](#uploading-to-department-web-hosting)
 <!-- https://support.cs.wwu.edu/home/survival_guide/resources/Department_Web_Hosting.html
 
 https://studentweb.cs.wwu.edu/~/duffiep/cyclestreets.jpg
