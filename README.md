@@ -124,7 +124,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 14. Congrats! you've uploaded to the web drive.
 
-<!-- ## Option 4: Remotely via Terminal and SCP
+## Option 4: Remotely via Terminal, SSH and SCP
 
 Follow the steps in this section if you are trying to upload files from your personal computer while **not** connected to the university wifi.
 
@@ -134,6 +134,8 @@ Follow the steps in this section if you are trying to upload files from your per
 > [!WARNING]
 > The syntax for commands between Windows and MacOS will vary. Currently the tutorial is only written for MacOS.
 
+### Option 4 - Section 1: Connecting via SSH
+
 1. Connect to the internet through the university VPN.
 
    1. In a browser open the CS support documentation. <https://support.cs.wwu.edu/home/access/wwu_vpn/index.html>.
@@ -141,7 +143,77 @@ Follow the steps in this section if you are trying to upload files from your per
 
 2. Open a new terminal window.
 
-3. Locate your lab folder that contains files on your personal computer. A good way to find this is with the `ls` command. Construct the path from the root, for example: `~/Documents/super_secret/lab3`. When you enter the `ls` command, you should see your HTML files and CSS folder. From now on we will refer to this as your `LOCAL_PATH`.
+3. SSH into the linux lab computers with the command:
+   `ssh -p 922 username@linux.cs.wwu.edu`
+
+   - Replace `username` with your WWU **CS** username.
+
+4. You will be promted for for password. Remember this is your WWU **CS** password.
+   ![alt](/img/O4-1.png "title")
+
+5. You may be asked to confirm that you wish to continue connecting. Enter `yes`.
+
+> [!TIP]
+> If at any point you want to clear the text on the terminal simply type `clear`. Additionally, to use command that your just typed again, simply press the up arrow key.
+
+6. You are now connected to the WWU Computer Science Linux CoW (Cluster of Workstations). Type:
+   `cd /`
+
+7. You are now in the `root` directory. From here we will navigate to our webdrive folder. Type:
+   `cd web/students/username`
+
+   - Replace `username` with your WWU **CS** username.
+
+   ![alt](/img/O4-2.png "title")
+
+> [!NOTE]
+> The words "directory" and "folder" are interchangeable.
+
+8. We now need to make our secret folder. Type:
+   `mkdir super_secret`
+
+   - Replace `super_secret` with your secret folder name.
+
+9. Navigate into the secret folder. Type:
+   `cd super_secret`
+
+   - Replace `super_secret` with your secret folder name.
+
+   ![alt](/img/O4-3.png "title")
+
+10. You will want to create a directory in your secret folder for your lab.
+    `mkdir lab3`
+
+- Replace `lab3` with your lab folder name.
+
+11. Navigate into the lab folder. Type:
+    `cd lab3`
+
+- Replace `lab3` with your lab folder name.
+
+![alt](/img/O4-4.png "title")
+
+12. Create a directory for each directory inside your lab3 folder, for instance, you may have a folder for CSS and Images. Type:
+    `mkdir css`
+    And
+    `mkdir images`
+
+> [!WARNING]
+> You should name these folders exactly as you did in your local lab.
+
+> [!IMPORTANT]
+> If you have more folders and subfolders you must add them using the `mkdir` command like above.
+
+13. You have now created all the locations we need in order to upload our files with SCP. Type: `exit` to terminate the SSH connection with the lab computer.
+
+![alt](/img/O4-5.png "title")
+
+### Option 4 - Section 2: Uploading via SCP
+
+> [!CAUTION]
+> The following steps are performed on your local machine. Make sure you have terminated the connection as detailed in the previous section.
+
+4. Locate your lab folder that contains files on your personal computer. A good way to find this is with the `ls` command. Construct the path from the root, for example: `~/Documents/super_secret/lab3`. When you enter the `ls` command, you should see your HTML files and CSS folder. From now on we will refer to this as your `LOCAL_PATH`.
 
 ![alt](/img/O4-1.png "title")
 
@@ -152,18 +224,17 @@ Follow the steps in this section if you are trying to upload files from your per
    - Replace `lab3` with the name of your lab folder.
 
 6. Lets transfer your first file, `index.html`. Run the command:
-`scp -P 922 LOCAL_PATH/index.html username@linux.cs.wwu.edu:REMOTE_PATH/index.html`
+   `scp -P 922 LOCAL_PATH/index.html username@linux.cs.wwu.edu:REMOTE_PATH/index.html`
 
    - Replace `LOCAL_PATH` with your local path.
    - Replace `username` with your WWU username.
    - Replace `REMOTE_PATH` with your remote path.
 
-7. You will be asked to confirm that you wish to continue connecting. Enter `yes`.
+7. You may be asked to confirm that you wish to continue connecting. Enter `yes`.
 
 ![alt](/img/O4-2.png "title")
 
-
-8. You will be promted for your username and password. Remember this is your WWU **CS** username and password. Enter  -->
+8. You will be promted for your username and password. Remember this is your WWU **CS** username and password. Enter
 
 <!-- https://support.cs.wwu.edu/home/survival_guide/resources/Department_Web_Hosting.html
 
