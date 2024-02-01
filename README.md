@@ -46,7 +46,8 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 Follow these instructions if you are on campus and in a Windows lab. You will need a method to transfer your lab files onto the lab computer (flash drive, email, SCP, etc.). Once you have a method of transferring your lab files follow these steps.
 
-**If a computer turns on and is using the Linux operating system, and you would like to switch. Shut down the computer and turn it back on. Then select the "Windows" option with the arrow keys when the computer boots up.**
+[!TIP]
+If a computer turns on and is using the Linux operating system, and you would like to switch. Shut down the computer and turn it back on. Then select the "Windows" option with the arrow keys when the computer boots up.
 
 \*You will not be able to switch to windows if you are in a linux only lab. In this case, follow the steps in option 1.
 
@@ -83,7 +84,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 ![alt](/img/O3-2.png "title")
 
-7. After a moment you should see files on the righthand side (Remote Site) of FileZilla.
+7. After a moment you should see files on the right side (Remote Site) of FileZilla.
 
 ![alt](/img/O3-3.png "title")
 
@@ -99,7 +100,7 @@ Follow the steps in this section if you are trying to upload files from your per
 
 12. Simply drag the lab folder from the Local site to the Remote site (left to right). This will upload the files and in a moment you should see the lab folder appear on the Remote site.
 
-13. Navigate to a browser and type the following url:
+13. Navigate to a browser and type the following URL:
     `https://studentweb.cs.wwu.edu/~/username/super_secret/lab3/index.html`
 
     - Replace `username` with your WWU username.
