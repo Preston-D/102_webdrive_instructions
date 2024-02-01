@@ -38,8 +38,8 @@ Follow these instructions if you are on campus and in a Linux lab. You will need
 
 7. This is where you will upload your lab files, this should include your "secret folder".
 
-   > [!CAUTION]
-   > Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
 8. Notice the file path at the top of the file explorer, this will be similar to your URL that you will submit.
 
@@ -87,8 +87,8 @@ Follow these instructions if you are on campus and in a Windows lab. You will ne
 
    ![Image of windows file explorer in the web drive](./img/O2-2.png)
 
-   > [!CAUTION]
-   > Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
 8. Navigate to a browser and type the following URL:
 
@@ -136,8 +136,8 @@ Follow the steps in this section if you are trying to upload files from your per
 
 5. Press "Quickconnect".
 
-   > [!TIP]
-   > If pressing "Quickconnect" does nothing, ensure you have the correct username and password, and double check the port and host. Remember, this is your WWU **CS** login.
+> [!TIP]
+> If pressing "Quickconnect" does nothing, ensure you have the correct username and password, and double check the port and host. Remember, this is your WWU **CS** login.
 
 6. An "Unknown host key" dialog box may appear, simply click "OK". You may optionally select to always trust the host.
 
@@ -160,8 +160,8 @@ Follow the steps in this section if you are trying to upload files from your per
 
 10. Simply drag the lab folder from the Local site to the Remote site (left to right). This will upload the files and in a moment you should see the lab folder appear on the Remote site.
 
-      > [!CAUTION]
-      > Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
 11. Navigate to a browser and type the following URL:
 
@@ -202,13 +202,13 @@ Follow the steps in this section if you are trying to upload files from your per
 
 3. Locate your secret folder that contains your lab files on your personal computer. A good way to find this is with the `ls` command. Construct the path from the root, for example: `~/Documents/super_secret`. When you enter the `ls` command, you should see your lab folder. From now on we will refer to this as your `LOCAL_PATH`.
 
-   > [!CAUTION]
-   > Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
+> [!CAUTION]
+> Make sure none of your files have spaces in them, instead use underscore '\_' or dash '-'.
 
    ![terminal showing file location](./img/O4A-1.png)
 
-   > [!Note]
-   > Your files may not be in the Documents folder like in the image. You will have to locate your lab folder on your own local machine.
+> [!Note]
+> Your files may not be in the Documents folder like in the image. You will have to locate your lab folder on your own local machine.
 
 4. Lets create your remote path, which we will refer to as `REMOTE_PATH`. The remote path will be:
 
@@ -238,15 +238,15 @@ Follow the steps in this section if you are trying to upload files from your per
 
    ![terminal showing successful upload of files](./img/O4A-3.png)
 
-   > [!IMPORTANT]
-   > If you have already performed these steps once, say for lab 3, and would like to upload a new folder, say lab4, enter this command:
-   > `scp -P 922 -r LOCAL_PATH/lab4  username@linux.cs.wwu.edu:REMOTE_PATH/super_secret`
-   >
-   > - Replace `LOCAL_PATH` with your local path.
-   > - Replace `username` with your WWU username.
-   > - Replace `REMOTE_PATH` with your remote path.
-   > - Notice the addition of `/lab4` to the end of the `LOCAL_PATH`. Replace this with your lab folder.
-   > - Notice the addition of `/super_secret` to the end of the `LOCAL_PATH`. Replace this with your secret folder name.
+> [!IMPORTANT]
+> If you have already performed these steps once, say for lab 3, and would like to upload a new folder, say lab4, enter this command:
+> `scp -P 922 -r LOCAL_PATH/lab4  username@linux.cs.wwu.edu:REMOTE_PATH/super_secret`
+>
+> - Replace `LOCAL_PATH` with your local path.
+> - Replace `username` with your WWU username.
+> - Replace `REMOTE_PATH` with your remote path.
+> - Notice the addition of `/lab4` to the end of the `LOCAL_PATH`. Replace this with your lab folder.
+> - Notice the addition of `/super_secret` to the end of the `LOCAL_PATH`. Replace this with your secret folder name.
 
 9. Navigate to a browser and type the following URL:
 
@@ -293,8 +293,8 @@ At some point you may with so run commands remotely on the lab computers. If tha
 
 5. You may be asked to confirm that you wish to continue connecting. Enter `yes`.
 
-   > [!TIP]
-   > If at any point you want to clear the text on the terminal simply type `clear`. Additionally, to use command that you just typed again, simply press the up arrow key.
+> [!TIP]
+> If at any point you want to clear the text on the terminal simply type `clear`. Additionally, to use command that you just typed again, simply press the up arrow key.
 
 6. You are now connected to the WWU Computer Science Linux CoW (Cluster of Workstations). Type:
 
@@ -312,8 +312,8 @@ At some point you may with so run commands remotely on the lab computers. If tha
 
    ![terminal in student webdrive folder](./img/O4-2.png)
 
-   > [!NOTE]
-   > The words "directory" and "folder" are interchangeable.
+> [!NOTE]
+> The words "directory" and "folder" are interchangeable.
 
 8. You are now connected to the lab computers and may run commands.
 
