@@ -240,8 +240,9 @@ Follow the steps in this section if you are trying to upload files from your per
 
 > [!IMPORTANT]
 > If you have already performed these steps once, say for lab 3, and would like to upload a new folder, say lab4, enter this command:
-> `scp -P 922 -r LOCAL_PATH/lab4  username@linux.cs.wwu.edu:REMOTE_PATH/super_secret`
->
+> ```
+>scp -P 922 -r LOCAL_PATH/lab4  username@linux.cs.wwu.edu:REMOTE_PATH/super_secret
+>```
 > - Replace `LOCAL_PATH` with your local path.
 > - Replace `username` with your WWU username.
 > - Replace `REMOTE_PATH` with your remote path.
